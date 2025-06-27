@@ -14,5 +14,21 @@ public class ReportDialog extends JDialog {
         setSize(350, 250);
         setLocationRelativeTo(parent);
 
-}
+        JTextArea reportArea = new JTextArea();
+        reportArea.setEditable(false);
+
+        StringBuilder sb = new StringBuilder();
+        Map<Category, Double> map = controller.getCategoryWiseExpense();
+        for (Category cat : Category.values()) {
+            sb.append(cat).append(": ").append(map.getOrDefault(cat, 0.0)).append("\n");
+        }
+        reportArea.setText(sb.toString());
+
+        add(new JScrollPane(reportArea), BorderLayout.CENTER);
+        JButton closeBtn = new JButton("Close");
+        closeBtn.addActionListener(e -> dispose());
+        add(closeBtn, BorderLayout.SOUTH);
+
+        setVisible(true);
+    }
 }
