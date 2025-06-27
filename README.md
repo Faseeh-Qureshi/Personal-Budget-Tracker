@@ -48,7 +48,7 @@ view/                      # GUI components and dialogs
 
 ## Author
 - Name: Muahmmad Faseeh
-- Email: L1F21BSSE0406
+- Email: m.faseeh147@gmail.com
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
