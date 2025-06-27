@@ -6,7 +6,7 @@ import model.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.util.List;
+
 
 public class EditDeleteDialog extends JDialog {
     public EditDeleteDialog(JFrame parent, BudgetController controller) {
