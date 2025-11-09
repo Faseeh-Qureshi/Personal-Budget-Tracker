@@ -47,7 +47,7 @@ view/                      # GUI components and dialogs
 ![Session Summary](image-7.png)
 
 ## Author
-- Name: Muahmmad Faseeh
+- Name: Muhammad Faseeh
 - Email: m.faseeh147@gmail.com
 
 ## License
